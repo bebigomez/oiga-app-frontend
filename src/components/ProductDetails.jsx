@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addItem } from '../reducers/cartReducer';
 import { formatPrice } from '../utils';
 import axios from 'axios';
+import Slider from './Slider';
 
 const ProductDetails = () => {
   const id = useParams().id;
@@ -37,9 +38,11 @@ const ProductDetails = () => {
   return (
     item && (
       <section className="grid md:grid-cols-2 md:justify-center">
-        <div className="bg-gray-500">
-        <img src={item.imageUrls[0]} alt="Product" className="max-w-full" />
-      </div>
+        {/* <div className="bg-gray-500">
+          <img src={item.imageUrls[0]} alt="Product" className="max-w-full" />
+        </div> */}
+
+        <Slider slides={item.imageUrls} />
 
         <div className="flex flex-col justify-start p-6 md:p-10">
           <h2 className="text-xl md:text-3xl font-semibold mb-4 text-gray-900">

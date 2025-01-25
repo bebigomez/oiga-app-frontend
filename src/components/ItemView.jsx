@@ -5,7 +5,7 @@ const ItemView = ({ item }) => {
     <div className="p-4">
       <Link to={`${item.id}`}>
         <img
-          src={item.images[0]}
+          src={item.imageUrls[0]}
           alt={item.name}
           className="w-full mb-2 rounded-xl"
         />

@@ -29,7 +29,8 @@ const App = () => {
         <Route path="/" element={<Home items={items} />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/add-item" element={<AddItemForm />} />
-        <Route path="/:section" element={<ItemsGrid items={items} />} />
+        {/* <Route path="/:section" element={<ItemsGrid items={items} />} /> */}
+        <Route path="/articulos" element={<ItemsGrid items={items} />} />
         <Route path="/product/:id" element={<ProductDetails items={items} />} />
         <Route
           path="/:section/:id"
