@@ -4,18 +4,26 @@ import { getAll } from '../services/items';
 
 const ItemsGrid = ({ items }) => {
   const [itemsToRender, setItemsToRender] = useState(items);
+  const [loading, setLoading] = useState(true);
 
   console.log('- items props: ', items)
 
   useEffect(() => {
-    if (items.length > 0) {
-      getAll().then((response) => {
-        console.log('- response: ', response)
-        setItemsToRender(response.data)
+    getAll()
+      .then((response) => {
+        setItemsToRender(response.data);
       })
-    }
-  }, [items, itemsToRender.length])
+      .catch((error) => {
+        console.error('Error fetching items:', error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [items]);
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
