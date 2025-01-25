@@ -10,11 +10,15 @@ const ItemsGrid = ({ items }) => {
   const navigate = useNavigate();
 
   const applyFilters = () => {
-    const gender = searchParams.get("gender");
+    const gender = searchParams.get("genero");
+    const age = searchParams.get("edad");
 
-    console.log('- applyFilters cuando se monta component');
-    console.log('gender param cuando se monta component: ', gender)
-    console.log('items cuando se monta component: ', items)
+    // console.log('gender... ', gender)
+    console.log('age... ', age)
+
+    // console.log('- applyFilters cuando se monta component');
+    // console.log('gender param cuando se monta component: ', gender)
+    // console.log('items cuando se monta component: ', items)
 
     let filteredItems = [...items];  // Copiamos el array de items
 
@@ -25,6 +29,10 @@ const ItemsGrid = ({ items }) => {
     // Filtramos por género
     if (gender) {
       filteredItems = filteredItems.filter((item) => item.gender_id === Number(gender));
+    }
+    
+    if (age) {
+      filteredItems = filteredItems.filter((item) => item.age_id === Number(age));
     }
 
     console.log('- filteredItems cuando se monta component: ', filteredItems)
@@ -78,7 +86,7 @@ const ItemsGrid = ({ items }) => {
           <h2 className='text-2xl'>Filters:</h2>
           <label htmlFor="gender-select">Género:</label>
 
-          <select name="gender" id="gender-select" onChange={(e) => { updateFilter("gender", e.target.value) }}>
+          <select name="gender" id="gender-select" onChange={(e) => { updateFilter("genero", e.target.value) }}>
             <option value="">--Elige una opción--</option>
             <option value="1">Mujer</option>
             <option value="2">Hombre</option>

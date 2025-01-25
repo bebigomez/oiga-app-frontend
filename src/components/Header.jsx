@@ -36,9 +36,9 @@ const Header = () => {
           <img src="/modio-logo.svg" style={{ height: '32px' }} alt="logo" />
         </Link>
         <nav className="flex-grow flex justify-center space-x-3 text-black font-roboto-condensed text-md md:text-2xl">
-          <Link to={'/articulos?gender=1'}>WOMEN</Link>
-          <Link to={'/articulos?gender=2'}>MEN</Link>
-          <Link to={'/kids'}>KIDS</Link>
+          <Link to={'/articulos?genero=1'}>WOMEN</Link>
+          <Link to={'/articulos?genero=2'}>MEN</Link>
+          <Link to={'/articulos?edad=3'}>KIDS</Link>
         </nav>
         <div className="flex space-x-3 text-black relative">
           <Search
