@@ -1,0 +1,310 @@
+{
+  "products": [
+    {
+      "name": "U AIRism Cotton Oversized Crew Neck Half-Sleeve T-Shirt",
+      "category": "T-Shirts",
+      "gender": "Men",
+      "price": 1490,
+      "color": "Gray",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003290/modio/men/U_AIRism_Cotton_Oversized_Crew_Neck_Half-Sleeve_T-Shirt_dm1rjf.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003286/modio/men/U_AIRism_Cotton_Oversized_Crew_Neck_Half-Sleeve_T-Shirt-2_eipois.avif"
+      ]
+    },
+    {
+      "name": "Smart Ankle Pants (Ultra Stretch, Tall)",
+      "category": "Pants",
+      "gender": "Men",
+      "price": 3990,
+      "color": "Gray",
+      "size": ["30", "32", "34", "36"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003283/modio/men/Smart_Ankle_Pants_Ultra_Stretch_Tall_envne7.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003279/modio/men/Smart_Ankle_Pants_Ultra_Stretch_Tall_-2_uwp3c5.avif"
+      ]
+    },
+    {
+      "name": "Fighting Game Legends UT (Short-Sleeve Graphic T-Shirt) (Street Fighter)",
+      "category": "T-Shirts",
+      "gender": "Men",
+      "price": 1490,
+      "color": "White",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003275/modio/men/Fighting_Game_Legends_UT_Short-Sleeve_Graphic_T-Shirt_Street_Fighter_df4oqy.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003271/modio/men/Fighting_Game_Legends_UT_Short-Sleeve_Graphic_T-Shirt_Street_Fighter_-2_rdy35k.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003268/modio/men/Fighting_Game_Legends_UT_Short-Sleeve_Graphic_T-Shirt_Street_Fighter_-3_lomazt.avif"
+      ]
+    },
+    {
+      "name": "Super Non-Iron Slim-Fit Shirt (Semi-Wide Collar)",
+      "category": "Shirts",
+      "gender": "Men",
+      "price": 2990,
+      "color": "Light blue",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003264/modio/men/Super_Non-Iron_Slim-Fit_Shirt_Semi-Wide_Collar_jdycwo.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003260/modio/men/Super_Non-Iron_Slim-Fit_Shirt_Semi-Wide_Collar_-2_fw6n0s.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003257/modio/men/Super_Non-Iron_Slim-Fit_Shirt_Semi-Wide_Collar_-3_mriy96.avif"
+      ]
+    },
+    {
+      "name": "Washed Jersey Ankle Pants",
+      "category": "Pants",
+      "gender": "Men",
+      "price": 2990,
+      "color": "Black",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003253/modio/men/Washed_Jersey_Ankle_Pants_r1zz43.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003253/modio/men/Washed_Jersey_Ankle_Pants_r1zz43.avif"
+      ]
+    },
+    {
+      "name": "UT Archive UT (Short Sleeve Graphic T-Shirt) (Jean-Michel Basquiat)",
+      "category": "T-Shirts",
+      "gender": "Men",
+      "price": 990,
+      "color": "Yellow",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003242/modio/men/UT_Archive_UT_Short_Sleeve_Graphic_T-Shirt_Jean-Michel_Basquiat_dsaje2.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003239/modio/men/UT_Archive_UT_Short_Sleeve_Graphic_T-Shirt_Jean-Michel_Basquiat_-2_r2yusw.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003235/modio/men/UT_Archive_UT_Short_Sleeve_Graphic_T-Shirt_Jean-Michel_Basquiat_-3_tzzwj8.jpg"
+      ]
+    },
+    {
+      "name": "Super Non-Iron Striped Slim-Fit Shirt",
+      "category": "Shirts",
+      "gender": "Men",
+      "price": 2990,
+      "color": "Blue",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003231/modio/men/Super_Non-Iron_Striped_Slim-Fit_Shirt_zglisn.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003229/modio/men/Super_Non-Iron_Striped_Slim-Fit_Shirt-2_cycvjg.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003305/modio/men/Super_Non-Iron_Striped_Slim-Fit_Shirt-3_zrvjek.avif"
+      ]
+    },
+    {
+      "name": "HEATTECH Lined Stretch Gloves",
+      "category": "Accessories",
+      "gender": "Men",
+      "price": 1990,
+      "color": "Gray",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003301/modio/men/HEATTECH_Lined_Stretch_Gloves_stx15l.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003298/modio/men/HEATTECH_Lined_Stretch_Gloves-2_pryzfa.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712003294/modio/men/HEATTECH_Lined_Stretch_Gloves-3_urob2o.avif"
+      ]
+    },
+    {
+      "name": "AIRism Cotton Short-Sleeve T-Shirt",
+      "category": "Tops",
+      "gender": "Women",
+      "price": 1490,
+      "color": "Light gray",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155088/modio/women/AIRism_Cotton_Short-Sleeve_T-Shirt_dfeavd.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155088/modio/women/AIRism_Cotton_Short-Sleeve_T-Shirt-2_jgqkih.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155087/modio/women/AIRism_Cotton_Short-Sleeve_T-Shirt-3_ox5qaq.avif"
+      ]
+    },
+    {
+      "name": "Rayon Printed Long-Sleeve Blouse",
+      "category": "Tops",
+      "gender": "Women",
+      "price": 2990,
+      "color": "Black",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155084/modio/women/Rayon_Printed_Long-Sleeve_Blouse_z7qbcj.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155084/modio/women/Rayon_Printed_Long-Sleeve_Blouse-2_ccg5qi.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155084/modio/women/Rayon_Printed_Long-Sleeve_Blouse-3_u4cnwr.avif"
+      ]
+    },
+    {
+      "name": "Rayon Skipper Collar 3/4 Sleeve Blouse",
+      "category": "Tops",
+      "gender": "Women",
+      "price": 2990,
+      "color": "Navy",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155084/modio/women/Rayon_Skipper_Collar_3-4_Sleeve_Blouse_set2zl.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155083/modio/women/Rayon_Skipper_Collar_3-4_Sleeve_Blouse-2_poilz9.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155083/modio/women/Rayon_Skipper_Collar_3-4_Sleeve_Blouse-3_nz0ih7.avif"
+      ]
+    },
+    {
+      "name": "AIRism Cotton Short-Sleeve Mini Dress",
+      "category": "Dresses",
+      "gender": "Women",
+      "price": 1990,
+      "color": "Gray",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/AIRism_Cotton_Short-Sleeve_Mini_Dress_sb5ja3.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155083/modio/women/AIRism_Cotton_Short-Sleeve_Mini_Dress-2_nhvnux.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155083/modio/women/AIRism_Cotton_Short-Sleeve_Mini_Dress-3_l2murv.avif"
+      ]
+    },
+    {
+      "name": "Ultra Stretch AIRism Sleeveless Dress",
+      "category": "Dresses",
+      "gender": "Women",
+      "price": 2990,
+      "color": "Navy",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/Ultra_Stretch_AIRism_Sleeveless_Dress-2_fjemic.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/Ultra_Stretch_AIRism_Sleeveless_Dress_yq2bts.avif"
+      ]
+    },
+    {
+      "name": "Wide Straight Cargo Pants",
+      "category": "Bottoms",
+      "gender": "Women",
+      "price": 3990,
+      "color": "Natural",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/Wide_Straight_Cargo_Pants_h7ooek.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155079/modio/women/Wide_Straight_Cargo_Pants-2_isx7fo.avif"
+      ]
+    },
+    {
+      "name": "Denim Wide Straight Cargo Pants (Tall)",
+      "category": "Bottoms",
+      "gender": "Women",
+      "price": 3990,
+      "color": "Blue",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155078/modio/women/Denim_Wide_Straight_Cargo_Pants_Tall_dzduud.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155078/modio/women/Denim_Wide_Straight_Cargo_Pants_Tall_-2_ge6t7a.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155078/modio/women/Denim_Wide_Straight_Cargo_Pants_Tall_-3_ynf39t.avif"
+      ]
+    },
+    {
+      "name": "Pocketable UV Protection Parka",
+      "category": "Outerwear",
+      "gender": "Women",
+      "price": 3990,
+      "color": "Light Blue",
+      "size": ["S", "M", "L", "XL"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155089/modio/women/Pocketable_UV_Protection_Parka_vtfmnf.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155088/modio/women/Pocketable_UV_Protection_Parka-2_ajzafe.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712155089/modio/women/Pocketable_UV_Protection_Parka-3_poj2jp.avif"
+      ]
+    },
+    {
+      "name": "AIRism Cotton Crew Neck Striped Short-Sleeve T-Shirt",
+      "category": "Short-Sleeve",
+      "gender": "Kids",
+      "price": 1490,
+      "color": "Pink",
+      "size": ["2T", "3T", "4T", "5T", "6", "7", "8", "9", "10", "11", "12"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181068/modio/kids/AIRism_Cotton_Crew_Neck_Striped_Short-Sleeve_T-Shirt_c1ycgd.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181065/modio/kids/AIRism_Cotton_Crew_Neck_Striped_Short-Sleeve_T-Shirt-2_ffcvdg.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181061/modio/kids/AIRism_Cotton_Crew_Neck_Striped_Short-Sleeve_T-Shirt-3_ogdywj.avif"
+      ]
+    },
+    {
+      "name": "AIRism Cotton Striped Crew Neck T-Shirt",
+      "category": "Short-Sleeve",
+      "gender": "Kids",
+      "price": 1490,
+      "color": "Navy",
+      "size": ["2T", "3T", "4T", "5T", "6", "7", "8", "9", "10", "11", "12"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181058/modio/kids/AIRism_Cotton_Striped_Crew_Neck_T-Shirt_fimszf.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181054/modio/kids/AIRism_Cotton_Striped_Crew_Neck_T-Shirt-2_wq3941.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181050/modio/kids/AIRism_Cotton_Striped_Crew_Neck_T-Shirt-3_nfossg.avif"
+      ]
+    },
+    {
+      "name": "Dry Pique Striped Polo Shirt",
+      "category": "Polo shirts",
+      "gender": "Kids",
+      "price": 1490,
+      "color": "Natural",
+      "size": ["2T", "3T", "4T", "5T", "6", "7", "8", "9", "10", "11", "12"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181047/modio/kids/Dry_Pique_Striped_Polo_Shirt_bol5gh.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181043/modio/kids/Dry_Pique_Striped_Polo_Shirt-2_idskzb.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181040/modio/kids/Dry_Pique_Striped_Polo_Shirt-3_aqsm1g.avif"
+      ]
+    },
+    {
+      "name": "Dry Pique Printed Polo Shirt",
+      "category": "Polo shirts",
+      "gender": "Kids",
+      "price": 1490,
+      "color": "Navy",
+      "size": ["2T", "3T", "4T", "5T", "6", "7", "8", "9", "10", "11", "12"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181036/modio/kids/Dry_Pique_Printed_Polo_Shirt_jwedts.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181034/modio/kids/Dry_Pique_Printed_Polo_Shirt-2_ofycwf.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180934/modio/kids/Dry_Pique_Printed_Polo_Shirt-3_twwwso.avif"
+      ]
+    },
+    {
+      "name": "Minecraft UT (Short-Sleeve Graphic T-Shirt)",
+      "category": "Graphic tees",
+      "gender": "Kids",
+      "price": 1490,
+      "color": "Blue",
+      "size": ["2T", "3T", "4T", "5T", "6", "7", "8", "9", "10", "11", "12"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180883/modio/kids/Minecraft_UT_Short-Sleeve_Graphic_T-Shirt_eb1mu1.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180874/modio/kids/Minecraft_UT_Short-Sleeve_Graphic_T-Shirt_-2_qyogyq.jpg",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180864/modio/kids/Minecraft_UT_Short-Sleeve_Graphic_T-Shirt_-3_rnreme.avif"
+      ]
+    },
+    {
+      "name": "LEGO® UT (Short-Sleeve Graphic T-Shirt)",
+      "category": "Graphic tees",
+      "gender": "Kids",
+      "price": 1490,
+      "color": "Black",
+      "size": ["2T", "3T", "4T", "5T", "6", "7", "8", "9", "10", "11", "12"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180861/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_fplm4i.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180806/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_-2_wc3vxd.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180797/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_-3_onpws6.avif"
+      ]
+    },
+    {
+      "name": "LEGO® UT (Short-Sleeve Graphic T-Shirt)",
+      "category": "Graphic tees",
+      "gender": "Kids",
+      "price": 1490,
+      "color": "White",
+      "size": ["2T", "3T", "4T", "5T", "6", "7", "8", "9", "10", "11", "12"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180793/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_2_zde4t2.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180788/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_2_-2_j41mvt.jpg",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712180790/modio/kids/LEGO_UT_Short-Sleeve_Graphic_T-Shirt_2_-3_dfjiu3.avif"
+      ]
+    },
+    {
+      "name": "Soft Brushed Striped Crew Neck Long-Sleeve T-Shirt",
+      "category": "Long-Sleeve",
+      "gender": "Kids",
+      "price": 1490,
+      "color": "Off white",
+      "size": ["2T", "3T", "4T", "5T", "6", "7", "8", "9", "10", "11", "12"],
+      "images": [
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181076/modio/kids/Soft_Brushed_Striped_Crew_Neck_Long-Sleeve_T-Shirt_ugnast.avif",
+        "https://res.cloudinary.com/dxvt08dc2/image/upload/v1712181072/modio/kids/Soft_Brushed_Striped_Crew_Neck_Long-Sleeve_T-Shirt-2_f0toer.avif"
+      ]
+    }
+  ]
+}
