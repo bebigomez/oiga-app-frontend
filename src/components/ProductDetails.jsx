@@ -25,7 +25,6 @@ const ProductDetails = () => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(`http://localhost:3001/products/${id}`);
-        console.log('response... ', response.data)
         setItem(response.data);  // Actualizamos el estado con el producto recibido
       } catch (err) {
         console.error(err);  // En caso de error
@@ -54,7 +53,7 @@ const ProductDetails = () => {
           <button
             className="bg-black md:text-xl text-white py-2 px-4 rounded"
             onClick={() => {
-              dispatch(addItem({ item }))
+              dispatch(addItem( item ))
             }}
           >
             Add to cart

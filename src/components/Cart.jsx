@@ -6,7 +6,9 @@ const Cart = () => {
   const items = useSelector((state) => state.cart)
   const dispatch = useDispatch()
 
-  let shippingCost = 500
+  console.log('- Items: ', items)
+
+  let shippingCost = 25000
 
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -23,13 +25,13 @@ const Cart = () => {
   }
 
   const getCartSubtotal = () => {
-    return items.reduce((total, item) => total + item.quantity * item.price, 0);
+    return items.reduce((total, item) => total + item.price, 0);
   }
 
-  const handleQuantityChange = (itemOrderId, event) => {
-    const newQuantity = parseInt(event.target.value)
-    dispatch(changeQuantity(itemOrderId, newQuantity))
-  }
+  // const handleQuantityChange = (itemOrderId, event) => {
+  //   const newQuantity = parseInt(event.target.value)
+  //   dispatch(changeQuantity(itemOrderId, newQuantity))
+  // }
 
   return (
     <section className="grid md:grid-cols-2">
@@ -38,43 +40,22 @@ const Cart = () => {
 
         {items.length === 0 && <h3>No items added yet.</h3>}
 
-        {items.map((item, index) => (
+        {items && items.map((item, index) => (
           <div
             className="cart-item flex border-b border-gray-200 py-4"
             key={index}
           >
             <img
-              src={item.images[0]}
+              src={item.imageUrls[0]}
               alt={item.name}
               className="w-28 md:w-40 object-cover mr-4 rounded"
             />
             <div className="flex-1">
               <h3 className="md:text-lg font-semibold">{item.name}</h3>
-              <p className="text-sm md:base text-gray-600">
-                Price: ${(item.price / 100).toFixed(2)}
-              </p>
-              <p className="text-sm md:base text-gray-600">
-                Color: {item.color}
-              </p>
               <p className="text-sm md:base text-gray-600">Size: {item.size}</p>
-              <p className="text-sm md:base text-gray-600">
-                Quantity:
-                <select
-                  value={item.quantity}
-                  onChange={(event) =>
-                    handleQuantityChange(item.orderId, event)
-                  }
-                >
-                  {[...Array(10).keys()].map((num) => (
-                    <option key={num + 1} value={num + 1}>
-                      {num + 1}
-                    </option>
-                  ))}
-                </select>
-              </p>
-              <p className="text-sm md:base text-gray-600">
-                Subtotal: ${((item.price * item.quantity) / 100).toFixed(2)}
-              </p>
+                <p className="text-sm md:base text-gray-600">
+                  ₲ {new Intl.NumberFormat('es-PY').format(item.price)}
+                </p>
             </div>
             <button
               className="text-gray-600 hover:text-red-600"
@@ -102,19 +83,19 @@ const Cart = () => {
         <div className="flex justify-between items-center mb-2">
           <span className="text-gray-600">Subtotal:</span>
           <span className="text-gray-800">
-            ${(getCartSubtotal() / 100).toFixed(2)}
+            ₲ {getCartSubtotal()}
           </span>
         </div>
         <div className="flex justify-between items-center mb-2">
           <span className="text-gray-600">Shipping:</span>
           <span className="text-gray-800">
-            ${(shippingCost / 100).toFixed(2)}
+            ${shippingCost}
           </span>{" "}
         </div>
         <div className="flex justify-between items-center mb-2">
           <span className="text-gray-600">Total:</span>
           <span className="text-gray-800">
-            ${((getCartSubtotal() + shippingCost) / 100).toFixed(2)}
+            ${getCartSubtotal() + shippingCost}
           </span>
         </div>
         <button

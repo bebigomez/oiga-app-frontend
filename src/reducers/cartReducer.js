@@ -2,23 +2,23 @@ const cartReducer = (state = [], action) => {
   switch (action.type) {
     case "NEW_ITEM": {
       const newItem = action.payload
+
+      console.log('-- action.payload: ', action.payload)
+      console.log('-- state item: ', newItem)
+      console.log('-- new item: ', newItem.id)
+      
       const existingItem = state.find(
-        (item) => item.id === newItem.id && item.size === newItem.size
+        (item) => item.id === newItem.id
       )
 
+      console.log('-- existing item: ', existingItem)
+      
       if (existingItem) {
-        return state.map((item) =>
-          existingItem
-            ? {
-                ...item,
-                quantity: item.quantity + 1,
-              }
-            : item
-        )
+        return state
       } else {
         return [
           ...state,
-          { ...newItem, quantity: 1, orderId: Math.floor(Math.random() * 100) },
+          { ...newItem, orderId: Math.floor(Math.random() * 100) },
         ]
       }
     }

@@ -9,3 +9,40 @@ body {
   font-family: Roboto;
   padding-top: 80px;
 }
+
+.accordion {
+  overflow: hidden;
+  /* max-width: 400px; */
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-content.open {
+  max-height: 600px; /* Ajusta según el contenido */
+}
+
+.content-inner {
+  padding: 10px;
+}
