@@ -6,6 +6,8 @@ import { formatPrice } from '../utils';
 import axios from 'axios';
 import Slider from './Slider';
 
+const api_key = import.meta.env.VITE_API_URL
+
 const ProductDetails = () => {
   const id = useParams().id;
 
@@ -24,7 +26,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/products/${id}`);
+        const response = await axios.get(`${api_key}/products/${id}`);
         setItem(response.data);  // Actualizamos el estado con el producto recibido
       } catch (err) {
         console.error(err);  // En caso de error
