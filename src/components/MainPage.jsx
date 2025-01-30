@@ -48,7 +48,7 @@ const MainPage = () => {
       </section>
       <section className="mx-8">
         <h3 className="text-2xl md:text-3xl font-roboto-condensed font-semibold mb-10 text-center">
-          OUR NEWEST COLLECTIONS
+          VISITÁ NUESTRA COLECCIÓN
         </h3>
         <div className="grid md:grid-cols-3 gap-6 mb-20">
           {collections.map((item, index) => {
