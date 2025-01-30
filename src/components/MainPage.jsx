@@ -63,7 +63,7 @@ const MainPage = () => {
                   </h3>
                   <p className="text-sm md:text-lg mb-4 md:mb-6">{item.description}</p>
                   <Link to={`/${item.title}`} className="text-sm bg-zinc-900 md:text-xl text-white py-2 px-3.5">
-                    Colleción {item.title}
+                    Colección {item.title}
                   </Link>
                 </div>
               </div>
