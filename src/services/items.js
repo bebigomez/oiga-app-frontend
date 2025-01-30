@@ -2,6 +2,8 @@ import axios from "axios"
 
 const api_key = import.meta.env.VITE_API_URL
 
+console.log('api key... ', api_key)
+
 // variable api_key now has the value set in startup
 
 // export const getAll = () => {
