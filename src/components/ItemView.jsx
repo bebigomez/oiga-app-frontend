@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { formatToGuarani } from '../utils'
 
 const ItemView = ({ item }) => {
   return (
@@ -17,7 +18,7 @@ const ItemView = ({ item }) => {
         {item.name}
       </Link>
       <div className="text-gray-800 font-roboto-condensed md:text-2xl">
-        ${(item.price / 100).toFixed(2)}
+        ₲ {formatToGuarani(item.price)}
       </div>
     </div>
   )

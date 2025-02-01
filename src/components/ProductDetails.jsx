@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../reducers/cartReducer';
 import { formatPrice } from '../utils';
 import axios from 'axios';
@@ -8,12 +8,17 @@ import Slider from './Slider';
 
 const api_key = import.meta.env.VITE_API_URL
 
+
 const ProductDetails = () => {
   const id = useParams().id;
-
+  
   const dispatch = useDispatch();
   const [selectedSize, setSelectedSize] = useState(null);
   const [item, setItem] = useState(null);
+  
+  const cartItems = useSelector((state) => state.cart)
+  console.log('- cartItems', cartItems)
+  console.log('hi')
 
   // if (!item) {
   //   return (
@@ -22,6 +27,10 @@ const ProductDetails = () => {
   //     </div>
   //   );
   // }
+
+  const itemOnCart = (currentItem) => {
+    return cartItems.find((item) => currentItem.id === item.id)
+  }
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -58,7 +67,7 @@ const ProductDetails = () => {
               dispatch(addItem( item ))
             }}
           >
-            Add to cart
+            {itemOnCart(item) ? 'Artículo agregado al carrito' : 'Agregar al carrito'}
           </button>
         </div>
       </section>

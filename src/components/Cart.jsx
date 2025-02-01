@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { changeQuantity, deleteItem } from "../reducers/cartReducer"
+import { formatToGuarani } from '../utils'
 
 const Cart = () => {
   const items = useSelector((state) => state.cart)
@@ -36,9 +37,9 @@ const Cart = () => {
   return (
     <section className="grid md:grid-cols-2">
       <div className="p-4 rounded">
-        <h2 className="text-2xl font-bold mb-4">Cart Items</h2>
+        <h2 className="text-2xl font-bold mb-4">Elementos del carrito</h2>
 
-        {items.length === 0 && <h3>No items added yet.</h3>}
+        {items.length === 0 && <h3>Aún no se agregaron artículos.</h3>}
 
         {items && items.map((item, index) => (
           <div
@@ -53,9 +54,9 @@ const Cart = () => {
             <div className="flex-1">
               <h3 className="md:text-lg font-semibold">{item.name}</h3>
               <p className="text-sm md:base text-gray-600">Size: {item.size}</p>
-                <p className="text-sm md:base text-gray-600">
-                  ₲ {new Intl.NumberFormat('es-PY').format(item.price)}
-                </p>
+              <p className="text-sm md:base text-gray-600">
+                ₲ {formatToGuarani(item.price)}
+              </p>
             </div>
             <button
               className="text-gray-600 hover:text-red-600"
@@ -79,30 +80,30 @@ const Cart = () => {
         ))}
       </div>
       <div className="p-4 rounded md:bg-slate-100">
-        <h2 className="text-2xl font-bold mb-4">Cart Summary</h2>
+        <h2 className="text-2xl font-bold mb-4">Resumen de compra</h2>
         <div className="flex justify-between items-center mb-2">
           <span className="text-gray-600">Subtotal:</span>
           <span className="text-gray-800">
-            ₲ {getCartSubtotal()}
+            ₲ {formatToGuarani(getCartSubtotal())}
           </span>
         </div>
         <div className="flex justify-between items-center mb-2">
-          <span className="text-gray-600">Shipping:</span>
+          <span className="text-gray-600">Envio:</span>
           <span className="text-gray-800">
-            ${shippingCost}
+            ₲ {formatToGuarani(shippingCost)}
           </span>{" "}
         </div>
         <div className="flex justify-between items-center mb-2">
           <span className="text-gray-600">Total:</span>
           <span className="text-gray-800">
-            ${getCartSubtotal() + shippingCost}
+            ₲ {formatToGuarani(getCartSubtotal() + shippingCost)}
           </span>
         </div>
         <button
           onClick={() => handleCheckout()}
           className="bg-black md:text-xl text-white py-2 px-4 rounded w-full"
         >
-          Checkout
+          Finalizar compra
         </button>
       </div>
 
@@ -132,22 +133,22 @@ const Cart = () => {
         </div>
 
         <h2 className="text-xl mb-4">
-          Payment confirmed successfully <br />
-          (just kidding, this is a fictional site)
+          Pago exitoso <br />
+          (Mentira, esto aún es un sitio ficticio)
         </h2>
-        <p className="text-lg mb-4">Purchase Summary:</p>
+        <p className="text-lg mb-4">Resumen de compra:</p>
         <p>
-          • Subtotal: ${(getCartSubtotal() / 100).toFixed(2)} <br />• Shipping:
-          ${(shippingCost / 100).toFixed(2)} <br />• Total: $
-          {((getCartSubtotal() + shippingCost) / 100).toFixed(2)}
+          • Subtotal: ₲ {formatToGuarani(getCartSubtotal())} <br />• Envío:
+          ₲ {formatToGuarani(shippingCost)} <br />• Total: ₲
+          {formatToGuarani(getCartSubtotal() + shippingCost)}
         </p>
-        <p className="text-lg mt-4 mb-4">Thank you for your purchase!</p>
+        <p className="text-lg mt-4 mb-4">Gracias por tu compra ficticia!</p>
         <div className="flex justify-end">
           <button
             onClick={handleCloseModal}
             className="bg-black text-white px-4 py-2 rounded mt-4"
           >
-            Close
+            Cerrar
           </button>
         </div>
       </dialog>
