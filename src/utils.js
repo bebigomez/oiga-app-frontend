@@ -19,3 +19,7 @@ export const shuffle = (array) => {
 export const formatPrice = (price) => {
   return (price / 100).toFixed(2)
 }
+
+export const formatToGuarani = (value) => {
+  return new Intl.NumberFormat('es-PY').format(value)
+}
