@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { formatPrice } from "../utils"
+import { formatToGuarani } from "../utils"
 
 const FavoriteItem = ({ item }) => {
   return (
@@ -14,7 +14,7 @@ const FavoriteItem = ({ item }) => {
         >
           {item.name}
         </Link>
-        <p className="text-sm">${formatPrice(item.price)}</p>
+        <p className="text-sm">₲ {formatToGuarani(item.price)}</p>
       </div>
     </div>
   )
