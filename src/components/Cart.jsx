@@ -133,7 +133,7 @@ const Cart = () => {
         </div>
 
         <h2 className="text-xl mb-4">
-          Pago exitoso <br />
+          Pago exitoso! <br />
           (Mentira, esto aún es un sitio ficticio)
         </h2>
         <p className="text-lg mb-4">Resumen de compra:</p>
