@@ -17,8 +17,7 @@ const ProductDetails = () => {
   const [item, setItem] = useState(null);
   
   const cartItems = useSelector((state) => state.cart)
-  console.log('- cartItems', cartItems)
-  console.log('hi')
+
 
   // if (!item) {
   //   return (

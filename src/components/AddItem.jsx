@@ -16,6 +16,8 @@ const validationSchema = Yup.object({
   condition: Yup.string().required("Estado es requerido"),
 });
 
+const api_key = import.meta.env.VITE_API_URL
+
 const AddItemForm = () => {
   const [images, setImages] = useState([]);
 
@@ -72,7 +74,7 @@ const AddItemForm = () => {
   
     try {
       // Enviar el formulario al backend usando axios
-      const response = await axios.post("http://localhost:3001/products", formData, {
+      const response = await axios.post(`${api_key}/products`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data', // Asegúrate de establecer el tipo de contenido
         }

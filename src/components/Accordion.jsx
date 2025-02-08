@@ -5,7 +5,7 @@ const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="accordion">
+    <div className="accordion border border-black">
       <button className="accordion-header font-roboto-condensed" onClick={() => setIsOpen(!isOpen)}>
         {title}
         <span className={`arrow ${isOpen ? "open" : ""}`}>&#9662;</span>
