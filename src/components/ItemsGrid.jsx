@@ -112,30 +112,34 @@ const ItemsGrid = ({ items: initialItems }) => {
     <>
       <div className='flex justify-center'>
 
-        <div className='w-full mx-4'>
-          <Accordion title={"ORDENAR"}>
-            <div>
-              <h3>Género:</h3>
-              {[
-                { id: "1", label: "Mujer" },
-                { id: "2", label: "Hombre" },
-                { id: "3", label: "Unisex" },
-              ].map((option) => (
-                <label key={option.id} className="block">
-                  <input
-                    type="checkbox"
-                    value={option.id}
-                    checked={searchParams.get("genero")?.split(",").includes(option.id) || false}
-                    onChange={(e) => updateFilter("genero", e.target.value, true)}
-                  />
-                  {option.label}
-                </label>
-              ))}
-            </div>
-          </Accordion>
+        <div className='w-full mx-4 flex flex-col md:flex-row'>
+          <div className='md:w-1/2'>
+            <Accordion title={"ORDENAR"}>
+              <div>
+                <h3>Género:</h3>
+                {[
+                  { id: "1", label: "Mujer" },
+                  { id: "2", label: "Hombre" },
+                  { id: "3", label: "Unisex" },
+                ].map((option) => (
+                  <label key={option.id} className="block">
+                    <input
+                      type="checkbox"
+                      value={option.id}
+                      checked={searchParams.get("genero")?.split(",").includes(option.id) || false}
+                      onChange={(e) => updateFilter("genero", e.target.value, true)}
+                    />
+                    {option.label}
+                  </label>
+                ))}
+              </div>
+            </Accordion>
+          </div>
 
-          <hr></hr>
+          {/* <hr className='md:hidden'></hr> */}
 
+          <div className='md:w-1/2'>
+          
           <Accordion title={"FILTRAR"}>
             <Accordion title={'Género'}>
               {[
@@ -259,6 +263,7 @@ const ItemsGrid = ({ items: initialItems }) => {
 
             </div>
           </Accordion>
+          </div>
         </div>
 
 
@@ -267,14 +272,14 @@ const ItemsGrid = ({ items: initialItems }) => {
 
       <div>
         {itemsToRender.length > 0 ? (
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-3 gap-4 ms-10">
             {itemsToRender.map((item) => (
               <ItemView key={item.id} item={item} />
             ))}
           </div>
         ) : (
           <div className="pt-32 flex justify-center">
-            <h3 className="text-black">No matching items found</h3>
+            <h3 className="text-black">No se encontraron elementos.</h3>
           </div>
         )}
       </div>

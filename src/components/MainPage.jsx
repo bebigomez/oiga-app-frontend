@@ -46,7 +46,7 @@ const MainPage = () => {
           Bienvenido a Oiga!
           <br />
           <br />
-          Encuentra Artículos de segunda mano en buen estado.
+          Encuentra Artículos de segunda mano en buen estado
         </h2>
       </section>
       <section className="mx-8">
@@ -54,14 +54,16 @@ const MainPage = () => {
           VISITÁ NUESTRA COLECCIÓN
         </h3>
         <div className="grid md:grid-cols-3 gap-6 mb-20">
-          {collections.map((item, index) => {
+          {collections.map((item) => {
             return (
-              <div key={index} className="relative">
-                <img className="mb-2 w-full" src={item.imageUrl} alt={item.title} />
-                <Link to={item.collectionUrl} className="absolute bottom-5 right-5 text-sm bg-zinc-900 md:text-xl text-white py-2 px-3.5">
-                  Colección {item.title}  
-                </Link>
-              </div>
+              <Link key={item.title} to={item.collectionUrl} >
+                <div className="relative">
+                  <img className="mb-2 w-full" src={item.imageUrl} alt={item.title} />
+                  <button className="absolute bottom-5 right-5 text-sm bg-zinc-900 md:text-xl text-white py-2 px-3.5">
+                    Colección {item.title}
+                  </button>
+                </div>
+              </Link>
             );
           })}
         </div>

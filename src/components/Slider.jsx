@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const Slider = ({ slides}) => {
-  
+const Slider = ({ slides }) => {
+
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
@@ -13,11 +13,11 @@ const Slider = ({ slides}) => {
   };
 
   return (
-    <div style={{ width: "100%", overflow: "hidden" ,position: "relative" }}>
+    <div style={{ width: "100%", overflow: "hidden", position: "relative" }}>
       <div
         style={{
           display: "flex",
-          transform: `translateX(-${index * 200/slides.length}%)`,
+          transform: `translateX(-${index * 200 / slides.length}%)`,
           transition: "transform 0.5s ease-in-out",
           width: `${100}%`,
         }}
@@ -27,12 +27,15 @@ const Slider = ({ slides}) => {
         ))}
       </div>
 
+      {slides.length > 1 && (<>
       <button onClick={prevSlide} style={{ position: "absolute", left: 10, top: "50%" }}>
         ◀
       </button>
       <button onClick={nextSlide} style={{ position: "absolute", right: 10, top: "50%" }}>
         ▶
       </button>
+      </>
+    )}
     </div>
   );
 };
