@@ -1,15 +1,3 @@
-FROM node:20 AS build-stage
-
-WORKDIR /usr/src/app
-
-COPY . .
-
-ENV VITE_API_URL='http://167.172.139.236/api'
-
-RUN npm ci
-
-RUN npm run build
-
 # FROM node:20 AS build-stage
 
 # WORKDIR /usr/src/app
@@ -22,6 +10,18 @@ RUN npm run build
 
 # RUN npm run build
 
-# FROM nginx:1.25-alpine
+FROM node:20 AS build-stage
 
-# COPY --from=build-stage /usr/src/app/dist /usr/share/nginx/html
+WORKDIR /usr/src/app
+
+COPY . .
+
+ENV VITE_API_URL='http://167.172.139.236/api'
+
+RUN npm ci
+
+RUN npm run build
+
+FROM nginx:1.25-alpine
+
+COPY --from=build-stage /usr/src/app/dist /usr/share/nginx/html
