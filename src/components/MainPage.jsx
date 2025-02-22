@@ -43,7 +43,7 @@ const MainPage = () => {
           alt="A collection of colored shirts"
         ></img>
         <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center bg-white/50 backdrop-blur-md p-4 rounded-2xl text-black text-2xl md:text-4xl font-bold">
-          Bienvenido a Oiga!
+          Bienvenido a Oiga Feria!
           <br />
           <br />
           Encuentra Artículos de segunda mano en buen estado
