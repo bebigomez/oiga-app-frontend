@@ -45,7 +45,7 @@ const Header = () => {
             className="h-4 md:h-8 cursor-pointer"
             onClick={() => setSearchOpen(!searchOpen)}
           />
-          <Link to={'/cart'} className='bg-amber-100'>
+          <Link to={'/cart'} className='bg-teal-100'>
             <ShoppingBag className="h-4 md:h-8" />
             {cartItemsCount > 0 && ( // Show counter only if there are items on the cart.
               <div className="absolute top-0 right-0 -mt-1.5 -mr-2 bg-red-500 text-white text-sm rounded-full w-5 h-5 flex justify-center items-center">
