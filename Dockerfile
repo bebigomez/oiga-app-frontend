@@ -27,7 +27,12 @@
 FROM node:20 AS build-stage
 WORKDIR /usr/src/app
 COPY . .
-ENV VITE_API_URL='http://167.172.139.236/api'
+
+ARG VITE_API_URL
+ENV VITE_API_URL=${VITE_API_URL}
+
+RUN echo "VITE_API_URL=${VITE_API_URL}"
+
 RUN npm ci
 RUN npm run build
 
